@@ -1,8 +1,9 @@
 {
   "images" : [
     {
-      "idiom" : "iphone",
       "size" : "60x45",
+      "idiom" : "iphone",
+      "filename" : "marubatu_icon.png",
       "scale" : "2x"
     },
     {
@@ -23,6 +24,7 @@
     {
       "size" : "27x20",
       "idiom" : "universal",
+      "filename" : "iPad App Icon iOS 7,9@2x.png",
       "scale" : "2x",
       "platform" : "ios"
     },

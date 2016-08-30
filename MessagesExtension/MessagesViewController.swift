@@ -44,12 +44,13 @@ class MessagesViewController: MSMessagesAppViewController {
 
     @IBAction func tapStartButton(_ sender: AnyObject) {
         message = MSMessage() // 初期化
+        requestPresentationStyle(.expanded) // FullScreenへ移行する
     }
 
-    @IBAction func tapButton(_ sender: AnyObject) {
+    @IBAction func tapPlayButton(_ sender: AnyObject) {
         let index = sender.tag - 1
         if maruBatu.set(index: index) {
-            // マル、若しくはバツを置けた場合
+            // マル、若しくはバツを置けた場合は、メッセージとして送信する
             let layout = MSMessageTemplateLayout()
             layout.image = maruBatu.renderSticker(opaque: true)
             message.url = maruBatu.url()
@@ -71,28 +72,12 @@ class MessagesViewController: MSMessagesAppViewController {
         }
     }
 
-//    private func composeMessage(caption: String, session: MSSession? = nil) -> MSMessage {
-//        var components = URLComponents()
-//        //components.queryItems = iceCream.queryItems
-//
-//        let layout = MSMessageTemplateLayout()
-//        layout.image = maruBatu.renderSticker(opaque: true)
-//        layout.caption = caption
-//
-//        let message = MSMessage(session: session ?? MSSession())
-//        message.url = components.url!
-//        message.layout = layout
-//
-//        return message
-//    }
-
     // MARK: - Conversation Handling
     
     override func willBecomeActive(with conversation: MSConversation) {
         if let selectedMessage = conversation.selectedMessage {
             // 選択中のMSMessageが有効な場合、urlからデータを取得してMaruBatuを初期化する
             maruBatu = MaruBatu(url: selectedMessage.url!)
-
             for i in 0 ..< 9 {
                 buttons[i].setImage(maruBatu.image(index: i), for: .normal)
             }
@@ -113,8 +98,9 @@ class MessagesViewController: MSMessagesAppViewController {
     }
     
     override func willTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
-        guard let conversation = activeConversation else { fatalError("Expected an active converstation") }
-        presentViewController(for: conversation, with: presentationStyle)
+        if let conversation = activeConversation {
+            presentViewController(for: conversation, with: presentationStyle)
+        }
     }
     
     override func didTransition(to presentationStyle: MSMessagesAppPresentationStyle) {

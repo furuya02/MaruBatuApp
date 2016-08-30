@@ -36,7 +36,7 @@
                                                             <constraint firstAttribute="width" constant="100" id="tmx-ca-hd4"/>
                                                         </constraints>
                                                         <connections>
-                                                            <action selector="tapButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="YHv-Tp-efJ"/>
+                                                            <action selector="tapPlayButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="yIv-pD-oxM"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjJ-qc-6x6">
@@ -45,7 +45,7 @@
                                                             <constraint firstAttribute="width" constant="100" id="oJz-sP-4Ef"/>
                                                         </constraints>
                                                         <connections>
-                                                            <action selector="tapButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="32H-nX-kdP"/>
+                                                            <action selector="tapPlayButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="mHh-WB-kCa"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fU-Uy-6kv">
@@ -54,7 +54,7 @@
                                                             <constraint firstAttribute="height" constant="100" id="yzp-JU-ZII"/>
                                                         </constraints>
                                                         <connections>
-                                                            <action selector="tapButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="v0U-ec-KzF"/>
+                                                            <action selector="tapPlayButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="dXK-f0-Vj8"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -67,7 +67,7 @@
                                                             <constraint firstAttribute="width" constant="100" id="ydO-YU-MyF"/>
                                                         </constraints>
                                                         <connections>
-                                                            <action selector="tapButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="OpH-mZ-WCu"/>
+                                                            <action selector="tapPlayButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="Thf-wf-iTf"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Yf-pi-g5S">
@@ -76,7 +76,7 @@
                                                             <constraint firstAttribute="height" constant="100" id="Y6u-p0-lOZ"/>
                                                         </constraints>
                                                         <connections>
-                                                            <action selector="tapButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="Tpk-V3-TTi"/>
+                                                            <action selector="tapPlayButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="BSF-xb-96f"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R90-ho-of9">
@@ -85,7 +85,7 @@
                                                             <constraint firstAttribute="width" constant="100" id="p4i-F2-XO5"/>
                                                         </constraints>
                                                         <connections>
-                                                            <action selector="tapButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="8m3-Qj-pTI"/>
+                                                            <action selector="tapPlayButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="fHS-Uw-6Hz"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -98,7 +98,7 @@
                                                             <constraint firstAttribute="height" constant="100" id="Frf-2w-VtI"/>
                                                         </constraints>
                                                         <connections>
-                                                            <action selector="tapButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="yD4-6X-77z"/>
+                                                            <action selector="tapPlayButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="zYT-sz-30K"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fhj-iw-e79">
@@ -107,7 +107,7 @@
                                                             <constraint firstAttribute="width" constant="100" id="pTY-fw-T9m"/>
                                                         </constraints>
                                                         <connections>
-                                                            <action selector="tapButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="AnA-DN-hwd"/>
+                                                            <action selector="tapPlayButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="fOU-iw-wMf"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7M-tg-GHF">
@@ -116,7 +116,7 @@
                                                             <constraint firstAttribute="width" constant="100" id="Gxe-g3-NXk"/>
                                                         </constraints>
                                                         <connections>
-                                                            <action selector="tapButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="Deu-tI-nG4"/>
+                                                            <action selector="tapPlayButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="Sbx-VC-KBA"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -124,7 +124,6 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.43484428209999998" green="1" blue="0.88812766180000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="3te-zW-7fY" firstAttribute="centerX" secondItem="kWf-0T-9tm" secondAttribute="centerX" id="1pL-a7-ydp"/>
                                     <constraint firstItem="vTm-6e-3oV" firstAttribute="centerX" secondItem="kWf-0T-9tm" secondAttribute="centerX" id="HVZ-og-qd9"/>
