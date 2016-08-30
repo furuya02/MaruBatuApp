@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D750DA961D75365E00576C8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D750DA951D75365E00576C8C /* Assets.xcassets */; };
+		D750DA9D1D75365E00576C8C /* MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D750DA9C1D75365E00576C8C /* MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D750DAA21D75365E00576C8C /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D750DAA11D75365E00576C8C /* Messages.framework */; };
+		D750DAA51D75365E00576C8C /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D750DAA41D75365E00576C8C /* MessagesViewController.swift */; };
+		D750DAA81D75365E00576C8C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D750DAA61D75365E00576C8C /* MainInterface.storyboard */; };
+		D750DAAA1D75365E00576C8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D750DAA91D75365E00576C8C /* Assets.xcassets */; };
+		D750DAB61D7542A900576C8C /* MaruBatu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D750DAB51D7542A900576C8C /* MaruBatu.swift */; };
+		D750DABB1D7542F300576C8C /* batu.png in Resources */ = {isa = PBXBuildFile; fileRef = D750DAB81D7542F300576C8C /* batu.png */; };
+		D750DABC1D7542F300576C8C /* maru.png in Resources */ = {isa = PBXBuildFile; fileRef = D750DAB91D7542F300576C8C /* maru.png */; };
+		D76EF0101D7584A600AC3988 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = D76EF00F1D7584A600AC3988 /* back.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D750DA9E1D75365E00576C8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D750DA8C1D75365E00576C8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D750DA9B1D75365E00576C8C;
+			remoteInfo = MessagesExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D750DAB11D75365E00576C8C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D750DA9D1D75365E00576C8C /* MessagesExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D750DA921D75365E00576C8C /* MaruBatuApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaruBatuApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D750DA951D75365E00576C8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D750DA971D75365E00576C8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D750DA9C1D75365E00576C8C /* MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessagesExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D750DAA11D75365E00576C8C /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		D750DAA41D75365E00576C8C /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		D750DAA71D75365E00576C8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		D750DAA91D75365E00576C8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D750DAAB1D75365E00576C8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D750DAB51D7542A900576C8C /* MaruBatu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaruBatu.swift; sourceTree = "<group>"; };
+		D750DAB81D7542F300576C8C /* batu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batu.png; sourceTree = "<group>"; };
+		D750DAB91D7542F300576C8C /* maru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maru.png; sourceTree = "<group>"; };
+		D76EF00F1D7584A600AC3988 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D750DA991D75365E00576C8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D750DAA21D75365E00576C8C /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D750DA8B1D75365E00576C8C = {
+			isa = PBXGroup;
+			children = (
+				D750DA941D75365E00576C8C /* MaruBatuApp */,
+				D750DAA31D75365E00576C8C /* MessagesExtension */,
+				D750DAA01D75365E00576C8C /* Frameworks */,
+				D750DA931D75365E00576C8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D750DA931D75365E00576C8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D750DA921D75365E00576C8C /* MaruBatuApp.app */,
+				D750DA9C1D75365E00576C8C /* MessagesExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D750DA941D75365E00576C8C /* MaruBatuApp */ = {
+			isa = PBXGroup;
+			children = (
+				D750DA951D75365E00576C8C /* Assets.xcassets */,
+				D750DA971D75365E00576C8C /* Info.plist */,
+			);
+			path = MaruBatuApp;
+			sourceTree = "<group>";
+		};
+		D750DAA01D75365E00576C8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D750DAA11D75365E00576C8C /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D750DAA31D75365E00576C8C /* MessagesExtension */ = {
+			isa = PBXGroup;
+			children = (
+				D76EF00F1D7584A600AC3988 /* back.png */,
+				D750DAB81D7542F300576C8C /* batu.png */,
+				D750DAB91D7542F300576C8C /* maru.png */,
+				D750DAA41D75365E00576C8C /* MessagesViewController.swift */,
+				D750DAA61D75365E00576C8C /* MainInterface.storyboard */,
+				D750DAA91D75365E00576C8C /* Assets.xcassets */,
+				D750DAAB1D75365E00576C8C /* Info.plist */,
+				D750DAB51D7542A900576C8C /* MaruBatu.swift */,
+			);
+			path = MessagesExtension;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D750DA911D75365E00576C8C /* MaruBatuApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D750DAB21D75365E00576C8C /* Build configuration list for PBXNativeTarget "MaruBatuApp" */;
+			buildPhases = (
+				D750DA901D75365E00576C8C /* Resources */,
+				D750DAB11D75365E00576C8C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D750DA9F1D75365E00576C8C /* PBXTargetDependency */,
+			);
+			name = MaruBatuApp;
+			productName = MaruBatuApp;
+			productReference = D750DA921D75365E00576C8C /* MaruBatuApp.app */;
+			productType = "com.apple.product-type.application.messages";
+		};
+		D750DA9B1D75365E00576C8C /* MessagesExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D750DAAE1D75365E00576C8C /* Build configuration list for PBXNativeTarget "MessagesExtension" */;
+			buildPhases = (
+				D750DA981D75365E00576C8C /* Sources */,
+				D750DA991D75365E00576C8C /* Frameworks */,
+				D750DA9A1D75365E00576C8C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MessagesExtension;
+			productName = MessagesExtension;
+			productReference = D750DA9C1D75365E00576C8C /* MessagesExtension.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D750DA8C1D75365E00576C8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = SAPPOROWORKS;
+				TargetAttributes = {
+					D750DA911D75365E00576C8C = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = T32GQ84AVX;
+						ProvisioningStyle = Automatic;
+					};
+					D750DA9B1D75365E00576C8C = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = T32GQ84AVX;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D750DA8F1D75365E00576C8C /* Build configuration list for PBXProject "MaruBatuApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D750DA8B1D75365E00576C8C;
+			productRefGroup = D750DA931D75365E00576C8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D750DA911D75365E00576C8C /* MaruBatuApp */,
+				D750DA9B1D75365E00576C8C /* MessagesExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D750DA901D75365E00576C8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D750DA961D75365E00576C8C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D750DA9A1D75365E00576C8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D750DAAA1D75365E00576C8C /* Assets.xcassets in Resources */,
+				D76EF0101D7584A600AC3988 /* back.png in Resources */,
+				D750DABC1D7542F300576C8C /* maru.png in Resources */,
+				D750DAA81D75365E00576C8C /* MainInterface.storyboard in Resources */,
+				D750DABB1D7542F300576C8C /* batu.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D750DA981D75365E00576C8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D750DAB61D7542A900576C8C /* MaruBatu.swift in Sources */,
+				D750DAA51D75365E00576C8C /* MessagesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D750DA9F1D75365E00576C8C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D750DA9B1D75365E00576C8C /* MessagesExtension */;
+			targetProxy = D750DA9E1D75365E00576C8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D750DAA61D75365E00576C8C /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D750DAA71D75365E00576C8C /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D750DAAC1D75365E00576C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D750DAAD1D75365E00576C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D750DAAF1D75365E00576C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = T32GQ84AVX;
+				INFOPLIST_FILE = MessagesExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.sapporoworks.MaruBatuApp.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D750DAB01D75365E00576C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				DEVELOPMENT_TEAM = T32GQ84AVX;
+				INFOPLIST_FILE = MessagesExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.sapporoworks.MaruBatuApp.MessagesExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D750DAB31D75365E00576C8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T32GQ84AVX;
+				INFOPLIST_FILE = MaruBatuApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.sapporoworks.MaruBatuApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D750DAB41D75365E00576C8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T32GQ84AVX;
+				INFOPLIST_FILE = MaruBatuApp/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = jp.ne.sapporoworks.MaruBatuApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D750DA8F1D75365E00576C8C /* Build configuration list for PBXProject "MaruBatuApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D750DAAC1D75365E00576C8C /* Debug */,
+				D750DAAD1D75365E00576C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D750DAAE1D75365E00576C8C /* Build configuration list for PBXNativeTarget "MessagesExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D750DAAF1D75365E00576C8C /* Debug */,
+				D750DAB01D75365E00576C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D750DAB21D75365E00576C8C /* Build configuration list for PBXNativeTarget "MaruBatuApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D750DAB31D75365E00576C8C /* Debug */,
+				D750DAB41D75365E00576C8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D750DA8C1D75365E00576C8C /* Project object */;
+}
