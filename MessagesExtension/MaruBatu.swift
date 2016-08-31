@@ -8,24 +8,19 @@
 
 import UIKit
 
-enum Kind {
-    case Maru
-    case Batu
-    case None
-}
-
-
 class MaruBatu {
 
-    var kinds: [Kind] = [.None, .None, .None, .None, .None, .None, .None, .None, .None]
-    var count = 0
+    enum Kind {
+        case Maru
+        case Batu
+        case None
+    }
 
-    init(url:URL) {
-        var str = url.absoluteString
-        for (index,c) in str.characters.enumerated() {
-            if index == 9 {
-                count = Int(String(c))!
-            } else {
+    var kinds: [Kind] = [.None, .None, .None, .None, .None, .None, .None, .None, .None]
+
+    init(data:String?) {
+        if let str = data {
+            for (index,c) in str.characters.enumerated() {
                 switch c {
                 case "1":
                     kinds[index] = .Maru
@@ -38,6 +33,9 @@ class MaruBatu {
         }
     }
 
+    // MARK: - Public
+
+    // 指定位置の画像を返す
     func image(index:Int) -> UIImage {
 
         switch kinds[index] {
@@ -50,17 +48,17 @@ class MaruBatu {
         }
     }
 
+    // 「まる」「ばつ」をセットする
     func set(index:Int) ->Bool {
         if kinds[index] == .None { // その場所が、まだ空白の場合だけ、マル若しくは、バツが置ける
-            // 何番目に置いたかでマルかバツかが決まる
-            kinds[index] = count%2==0 ? .Batu : .Maru
-            count += 1
+            kinds[index] = count() % 2 == 0 ? .Batu : .Maru // 何番目に置いたかでマルかバツかが決まる
             return true
         }
         return false
     }
 
-    func url() -> URL {
+    // 現在の対戦状況を文字列で返す
+    func data() -> String {
         var result = ""
         for var kind in kinds {
             switch kind {
@@ -72,13 +70,11 @@ class MaruBatu {
                 result = result + "2"
             }
         }
-
-        result = result + count.description
-        return URL(string: result)!
+        return result
     }
 
     // 現在の対戦状況を画像で返す
-    func renderSticker(opaque: Bool) -> UIImage? {
+    func renderSticker() -> UIImage? {
         let baseSize = 100 // ひとマスのサイズは、縦横100
         if let backImage = UIImage(named: "back.png") {
             if let maruImage = UIImage(named: "maru.png") {
@@ -103,4 +99,15 @@ class MaruBatu {
         return UIImage()
     }
 
+    // MARK: - Private
+
+    func count() -> Int {
+        var result = 0
+        for var kind in kinds {
+            if (kind != .None) {
+                result += 1
+            }
+        }
+        return result
+    }
 }

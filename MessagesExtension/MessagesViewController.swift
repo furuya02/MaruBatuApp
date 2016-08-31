@@ -24,8 +24,7 @@ class MessagesViewController: MSMessagesAppViewController {
     @IBOutlet weak var button8: UIButton!
     @IBOutlet weak var button9: UIButton!
 
-    var maruBatu = MaruBatu(url: URL(string: "0000000005")!)
-    var message = MSMessage()
+    var maruBatu = MaruBatu(data: nil)
     var buttons:[UIButton] = []
 
     override func viewDidLoad() {
@@ -43,7 +42,7 @@ class MessagesViewController: MSMessagesAppViewController {
     // MARK: - Action
 
     @IBAction func tapStartButton(_ sender: AnyObject) {
-        message = MSMessage() // 初期化
+        maruBatu = MaruBatu(data: nil)
         requestPresentationStyle(.expanded) // FullScreenへ移行する
     }
 
@@ -51,9 +50,16 @@ class MessagesViewController: MSMessagesAppViewController {
         let index = sender.tag - 1
         if maruBatu.set(index: index) {
             // マル、若しくはバツを置けた場合は、メッセージとして送信する
+            var message = MSMessage(session: MSSession()) // 初めての場合は、セッションを初期化する
+            if let selectedMessage = self.activeConversation?.selectedMessage {
+                if let session = selectedMessage.session {
+                    message = MSMessage(session: session) // ２回目以降は、同じセッションとする
+                    message.summaryText = "更新されました"
+                }
+            }
             let layout = MSMessageTemplateLayout()
-            layout.image = maruBatu.renderSticker(opaque: true)
-            message.url = maruBatu.url()
+            layout.image = maruBatu.renderSticker()
+            message.url = URL(string: maruBatu.data())
             message.layout = layout
             self.activeConversation?.insert(message, completionHandler: nil)
             dismiss()
@@ -75,12 +81,15 @@ class MessagesViewController: MSMessagesAppViewController {
     // MARK: - Conversation Handling
     
     override func willBecomeActive(with conversation: MSConversation) {
-        if let selectedMessage = conversation.selectedMessage {
-            // 選択中のMSMessageが有効な場合、urlからデータを取得してMaruBatuを初期化する
-            maruBatu = MaruBatu(url: selectedMessage.url!)
-            for i in 0 ..< 9 {
-                buttons[i].setImage(maruBatu.image(index: i), for: .normal)
+
+        if let message = conversation.selectedMessage {
+            if let url = message.url {
+                // 選択中のMSMessageが有効な場合、urlからデータを取得してMaruBatuを初期化する
+                maruBatu = MaruBatu(data: url.absoluteString)
             }
+        }
+        for i in 0 ..< 9 {
+            buttons[i].setImage(maruBatu.image(index: i), for: .normal)
         }
         presentViewController(for: conversation, with: presentationStyle)
     }
