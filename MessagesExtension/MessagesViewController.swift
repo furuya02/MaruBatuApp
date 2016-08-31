@@ -29,14 +29,11 @@ class MessagesViewController: MSMessagesAppViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         buttons = [button1 ,button2 ,button3 ,button4 ,button5 ,button6 ,button7 ,button8 ,button9]
-
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     // MARK: - Action
@@ -50,8 +47,6 @@ class MessagesViewController: MSMessagesAppViewController {
         let index = sender.tag - 1
         if maruBatu.set(index: index) {
             refresh()
-            //buttons[index].setImage(maruBatu.image(index: index), for: .normal)
-
             // マル、若しくはバツを置けた場合は、メッセージとして送信する
             var message = MSMessage(session: MSSession()) // 初めての場合は、セッションを初期化する
             if let selectedMessage = self.activeConversation?.selectedMessage {
@@ -71,14 +66,9 @@ class MessagesViewController: MSMessagesAppViewController {
 
     // MARK: - Private
 
-    private func presentViewController(for conversation: MSConversation, with presentationStyle: MSMessagesAppPresentationStyle) {
-        if presentationStyle == .compact {
-            comppactView.isHidden = false
-            fullScreenView.isHidden = true
-        } else {
-            comppactView.isHidden = true
-            fullScreenView.isHidden = false
-        }
+    private func presentViewController(style: MSMessagesAppPresentationStyle) {
+        comppactView.isHidden = style == .expanded
+        fullScreenView.isHidden = style == .compact
     }
 
     private func refresh() {
@@ -93,7 +83,6 @@ class MessagesViewController: MSMessagesAppViewController {
     // MARK: - Conversation Handling
     
     override func willBecomeActive(with conversation: MSConversation) {
-
         if let message = conversation.selectedMessage {
             if let url = message.url {
                 // 選択中のMSMessageが有効な場合、urlからデータを取得してMaruBatuを初期化する
@@ -101,28 +90,11 @@ class MessagesViewController: MSMessagesAppViewController {
             }
         }
         refresh()
-        presentViewController(for: conversation, with: presentationStyle)
+        presentViewController(style: presentationStyle)
     }
 
-    override func didResignActive(with conversation: MSConversation) {
-    }
-   
-    override func didReceive(_ message: MSMessage, conversation: MSConversation) {
-    }
-    
-    override func didStartSending(_ message: MSMessage, conversation: MSConversation) {
-    }
-    
-    override func didCancelSending(_ message: MSMessage, conversation: MSConversation) {
-    }
-    
     override func willTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
-        if let conversation = activeConversation {
-            presentViewController(for: conversation, with: presentationStyle)
-        }
-    }
-    
-    override func didTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
+        presentViewController(style: presentationStyle)
     }
 
 }

@@ -17,7 +17,6 @@ enum Kind {
 
 class MaruBatu {
 
-
     var kinds: [Kind] = [.None, .None, .None, .None, .None, .None, .None, .None, .None]
 
     init(data:String?) {
