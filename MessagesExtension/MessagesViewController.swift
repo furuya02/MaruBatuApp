@@ -49,6 +49,9 @@ class MessagesViewController: MSMessagesAppViewController {
     @IBAction func tapPlayButton(_ sender: AnyObject) {
         let index = sender.tag - 1
         if maruBatu.set(index: index) {
+            refresh()
+            //buttons[index].setImage(maruBatu.image(index: index), for: .normal)
+
             // マル、若しくはバツを置けた場合は、メッセージとして送信する
             var message = MSMessage(session: MSSession()) // 初めての場合は、セッションを初期化する
             if let selectedMessage = self.activeConversation?.selectedMessage {
@@ -78,6 +81,15 @@ class MessagesViewController: MSMessagesAppViewController {
         }
     }
 
+    private func refresh() {
+        for i in 0 ..< 9 {
+            buttons[i].setImage(maruBatu.image(index: i), for: .normal)
+        }
+        if maruBatu.winner() != .None {
+            fullScreenView.backgroundColor = maruBatu.winnerColor()
+        }
+    }
+
     // MARK: - Conversation Handling
     
     override func willBecomeActive(with conversation: MSConversation) {
@@ -88,9 +100,7 @@ class MessagesViewController: MSMessagesAppViewController {
                 maruBatu = MaruBatu(data: url.absoluteString)
             }
         }
-        for i in 0 ..< 9 {
-            buttons[i].setImage(maruBatu.image(index: i), for: .normal)
-        }
+        refresh()
         presentViewController(for: conversation, with: presentationStyle)
     }
 
