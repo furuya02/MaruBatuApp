@@ -2,11 +2,12 @@
 //  MaruBatu.swift
 //  MaruBatuApp
 //
-//  Created by hirauchi.shinichi on 2016/08/30.
+//  Created by hirauchi.shinichi on 2016/09/09.
 //  Copyright © 2016年 SAPPOROWORKS. All rights reserved.
 //
 
 import UIKit
+
 
 enum Kind {
     case Maru

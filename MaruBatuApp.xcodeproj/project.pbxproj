@@ -7,36 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D750DA961D75365E00576C8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D750DA951D75365E00576C8C /* Assets.xcassets */; };
-		D750DA9D1D75365E00576C8C /* MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D750DA9C1D75365E00576C8C /* MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		D750DAA21D75365E00576C8C /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D750DAA11D75365E00576C8C /* Messages.framework */; };
-		D750DAA51D75365E00576C8C /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D750DAA41D75365E00576C8C /* MessagesViewController.swift */; };
-		D750DAA81D75365E00576C8C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D750DAA61D75365E00576C8C /* MainInterface.storyboard */; };
-		D750DAAA1D75365E00576C8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D750DAA91D75365E00576C8C /* Assets.xcassets */; };
-		D750DAB61D7542A900576C8C /* MaruBatu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D750DAB51D7542A900576C8C /* MaruBatu.swift */; };
-		D750DABB1D7542F300576C8C /* batu.png in Resources */ = {isa = PBXBuildFile; fileRef = D750DAB81D7542F300576C8C /* batu.png */; };
-		D750DABC1D7542F300576C8C /* maru.png in Resources */ = {isa = PBXBuildFile; fileRef = D750DAB91D7542F300576C8C /* maru.png */; };
-		D76EF0101D7584A600AC3988 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = D76EF00F1D7584A600AC3988 /* back.png */; };
+		D73842781D8272D10042239E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D73842771D8272D10042239E /* Assets.xcassets */; };
+		D738427F1D8272D10042239E /* MessagesExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D738427E1D8272D10042239E /* MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D73842841D8272D10042239E /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73842831D8272D10042239E /* Messages.framework */; };
+		D73842871D8272D10042239E /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73842861D8272D10042239E /* MessagesViewController.swift */; };
+		D738428A1D8272D10042239E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D73842881D8272D10042239E /* MainInterface.storyboard */; };
+		D738428C1D8272D10042239E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D738428B1D8272D10042239E /* Assets.xcassets */; };
+		D738429A1D827FD10042239E /* MaruBatu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73842991D827FD10042239E /* MaruBatu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D750DA9E1D75365E00576C8C /* PBXContainerItemProxy */ = {
+		D73842801D8272D10042239E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D750DA8C1D75365E00576C8C /* Project object */;
+			containerPortal = D738426E1D8272D10042239E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = D750DA9B1D75365E00576C8C;
+			remoteGlobalIDString = D738427D1D8272D10042239E;
 			remoteInfo = MessagesExtension;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D750DAB11D75365E00576C8C /* Embed App Extensions */ = {
+		D73842931D8272D20042239E /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				D750DA9D1D75365E00576C8C /* MessagesExtension.appex in Embed App Extensions */,
+				D738427F1D8272D10042239E /* MessagesExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,80 +41,74 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D750DA921D75365E00576C8C /* MaruBatuApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaruBatuApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D750DA951D75365E00576C8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D750DA971D75365E00576C8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D750DA9C1D75365E00576C8C /* MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessagesExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		D750DAA11D75365E00576C8C /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
-		D750DAA41D75365E00576C8C /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
-		D750DAA71D75365E00576C8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
-		D750DAA91D75365E00576C8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D750DAAB1D75365E00576C8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D750DAB51D7542A900576C8C /* MaruBatu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaruBatu.swift; sourceTree = "<group>"; };
-		D750DAB81D7542F300576C8C /* batu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = batu.png; sourceTree = "<group>"; };
-		D750DAB91D7542F300576C8C /* maru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = maru.png; sourceTree = "<group>"; };
-		D76EF00F1D7584A600AC3988 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		D73842741D8272D10042239E /* MaruBatuApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaruBatuApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D73842771D8272D10042239E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D73842791D8272D10042239E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D738427E1D8272D10042239E /* MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MessagesExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D73842831D8272D10042239E /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		D73842861D8272D10042239E /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		D73842891D8272D10042239E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		D738428B1D8272D10042239E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D738428D1D8272D20042239E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D73842991D827FD10042239E /* MaruBatu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaruBatu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D750DA991D75365E00576C8C /* Frameworks */ = {
+		D738427B1D8272D10042239E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D750DAA21D75365E00576C8C /* Messages.framework in Frameworks */,
+				D73842841D8272D10042239E /* Messages.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D750DA8B1D75365E00576C8C = {
+		D738426D1D8272D10042239E = {
 			isa = PBXGroup;
 			children = (
-				D750DA941D75365E00576C8C /* MaruBatuApp */,
-				D750DAA31D75365E00576C8C /* MessagesExtension */,
-				D750DAA01D75365E00576C8C /* Frameworks */,
-				D750DA931D75365E00576C8C /* Products */,
+				D73842761D8272D10042239E /* MaruBatuApp */,
+				D73842851D8272D10042239E /* MessagesExtension */,
+				D73842821D8272D10042239E /* Frameworks */,
+				D73842751D8272D10042239E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D750DA931D75365E00576C8C /* Products */ = {
+		D73842751D8272D10042239E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D750DA921D75365E00576C8C /* MaruBatuApp.app */,
-				D750DA9C1D75365E00576C8C /* MessagesExtension.appex */,
+				D73842741D8272D10042239E /* MaruBatuApp.app */,
+				D738427E1D8272D10042239E /* MessagesExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D750DA941D75365E00576C8C /* MaruBatuApp */ = {
+		D73842761D8272D10042239E /* MaruBatuApp */ = {
 			isa = PBXGroup;
 			children = (
-				D750DA951D75365E00576C8C /* Assets.xcassets */,
-				D750DA971D75365E00576C8C /* Info.plist */,
+				D73842771D8272D10042239E /* Assets.xcassets */,
+				D73842791D8272D10042239E /* Info.plist */,
 			);
 			path = MaruBatuApp;
 			sourceTree = "<group>";
 		};
-		D750DAA01D75365E00576C8C /* Frameworks */ = {
+		D73842821D8272D10042239E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D750DAA11D75365E00576C8C /* Messages.framework */,
+				D73842831D8272D10042239E /* Messages.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D750DAA31D75365E00576C8C /* MessagesExtension */ = {
+		D73842851D8272D10042239E /* MessagesExtension */ = {
 			isa = PBXGroup;
 			children = (
-				D76EF00F1D7584A600AC3988 /* back.png */,
-				D750DAB81D7542F300576C8C /* batu.png */,
-				D750DAB91D7542F300576C8C /* maru.png */,
-				D750DAA41D75365E00576C8C /* MessagesViewController.swift */,
-				D750DAA61D75365E00576C8C /* MainInterface.storyboard */,
-				D750DAA91D75365E00576C8C /* Assets.xcassets */,
-				D750DAAB1D75365E00576C8C /* Info.plist */,
-				D750DAB51D7542A900576C8C /* MaruBatu.swift */,
+				D73842861D8272D10042239E /* MessagesViewController.swift */,
+				D73842881D8272D10042239E /* MainInterface.storyboard */,
+				D738428B1D8272D10042239E /* Assets.xcassets */,
+				D738428D1D8272D20042239E /* Info.plist */,
+				D73842991D827FD10042239E /* MaruBatu.swift */,
 			);
 			path = MessagesExtension;
 			sourceTree = "<group>";
@@ -125,30 +116,30 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D750DA911D75365E00576C8C /* MaruBatuApp */ = {
+		D73842731D8272D10042239E /* MaruBatuApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D750DAB21D75365E00576C8C /* Build configuration list for PBXNativeTarget "MaruBatuApp" */;
+			buildConfigurationList = D73842941D8272D20042239E /* Build configuration list for PBXNativeTarget "MaruBatuApp" */;
 			buildPhases = (
-				D750DA901D75365E00576C8C /* Resources */,
-				D750DAB11D75365E00576C8C /* Embed App Extensions */,
+				D73842721D8272D10042239E /* Resources */,
+				D73842931D8272D20042239E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D750DA9F1D75365E00576C8C /* PBXTargetDependency */,
+				D73842811D8272D10042239E /* PBXTargetDependency */,
 			);
 			name = MaruBatuApp;
 			productName = MaruBatuApp;
-			productReference = D750DA921D75365E00576C8C /* MaruBatuApp.app */;
+			productReference = D73842741D8272D10042239E /* MaruBatuApp.app */;
 			productType = "com.apple.product-type.application.messages";
 		};
-		D750DA9B1D75365E00576C8C /* MessagesExtension */ = {
+		D738427D1D8272D10042239E /* MessagesExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D750DAAE1D75365E00576C8C /* Build configuration list for PBXNativeTarget "MessagesExtension" */;
+			buildConfigurationList = D73842901D8272D20042239E /* Build configuration list for PBXNativeTarget "MessagesExtension" */;
 			buildPhases = (
-				D750DA981D75365E00576C8C /* Sources */,
-				D750DA991D75365E00576C8C /* Frameworks */,
-				D750DA9A1D75365E00576C8C /* Resources */,
+				D738427A1D8272D10042239E /* Sources */,
+				D738427B1D8272D10042239E /* Frameworks */,
+				D738427C1D8272D10042239E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -156,32 +147,32 @@
 			);
 			name = MessagesExtension;
 			productName = MessagesExtension;
-			productReference = D750DA9C1D75365E00576C8C /* MessagesExtension.appex */;
+			productReference = D738427E1D8272D10042239E /* MessagesExtension.appex */;
 			productType = "com.apple.product-type.app-extension.messages";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D750DA8C1D75365E00576C8C /* Project object */ = {
+		D738426E1D8272D10042239E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = SAPPOROWORKS;
 				TargetAttributes = {
-					D750DA911D75365E00576C8C = {
+					D73842731D8272D10042239E = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = T32GQ84AVX;
 						ProvisioningStyle = Automatic;
 					};
-					D750DA9B1D75365E00576C8C = {
+					D738427D1D8272D10042239E = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = T32GQ84AVX;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = D750DA8F1D75365E00576C8C /* Build configuration list for PBXProject "MaruBatuApp" */;
+			buildConfigurationList = D73842711D8272D10042239E /* Build configuration list for PBXProject "MaruBatuApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -189,65 +180,62 @@
 				en,
 				Base,
 			);
-			mainGroup = D750DA8B1D75365E00576C8C;
-			productRefGroup = D750DA931D75365E00576C8C /* Products */;
+			mainGroup = D738426D1D8272D10042239E;
+			productRefGroup = D73842751D8272D10042239E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D750DA911D75365E00576C8C /* MaruBatuApp */,
-				D750DA9B1D75365E00576C8C /* MessagesExtension */,
+				D73842731D8272D10042239E /* MaruBatuApp */,
+				D738427D1D8272D10042239E /* MessagesExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D750DA901D75365E00576C8C /* Resources */ = {
+		D73842721D8272D10042239E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D750DA961D75365E00576C8C /* Assets.xcassets in Resources */,
+				D73842781D8272D10042239E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D750DA9A1D75365E00576C8C /* Resources */ = {
+		D738427C1D8272D10042239E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D750DAAA1D75365E00576C8C /* Assets.xcassets in Resources */,
-				D76EF0101D7584A600AC3988 /* back.png in Resources */,
-				D750DABC1D7542F300576C8C /* maru.png in Resources */,
-				D750DAA81D75365E00576C8C /* MainInterface.storyboard in Resources */,
-				D750DABB1D7542F300576C8C /* batu.png in Resources */,
+				D738428C1D8272D10042239E /* Assets.xcassets in Resources */,
+				D738428A1D8272D10042239E /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D750DA981D75365E00576C8C /* Sources */ = {
+		D738427A1D8272D10042239E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D750DAB61D7542A900576C8C /* MaruBatu.swift in Sources */,
-				D750DAA51D75365E00576C8C /* MessagesViewController.swift in Sources */,
+				D738429A1D827FD10042239E /* MaruBatu.swift in Sources */,
+				D73842871D8272D10042239E /* MessagesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D750DA9F1D75365E00576C8C /* PBXTargetDependency */ = {
+		D73842811D8272D10042239E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D750DA9B1D75365E00576C8C /* MessagesExtension */;
-			targetProxy = D750DA9E1D75365E00576C8C /* PBXContainerItemProxy */;
+			target = D738427D1D8272D10042239E /* MessagesExtension */;
+			targetProxy = D73842801D8272D10042239E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D750DAA61D75365E00576C8C /* MainInterface.storyboard */ = {
+		D73842881D8272D10042239E /* MainInterface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D750DAA71D75365E00576C8C /* Base */,
+				D73842891D8272D10042239E /* Base */,
 			);
 			name = MainInterface.storyboard;
 			sourceTree = "<group>";
@@ -255,7 +243,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D750DAAC1D75365E00576C8C /* Debug */ = {
+		D738428E1D8272D20042239E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -304,7 +292,7 @@
 			};
 			name = Debug;
 		};
-		D750DAAD1D75365E00576C8C /* Release */ = {
+		D738428F1D8272D20042239E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -346,7 +334,7 @@
 			};
 			name = Release;
 		};
-		D750DAAF1D75365E00576C8C /* Debug */ = {
+		D73842911D8272D20042239E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
@@ -360,7 +348,7 @@
 			};
 			name = Debug;
 		};
-		D750DAB01D75365E00576C8C /* Release */ = {
+		D73842921D8272D20042239E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
@@ -374,7 +362,7 @@
 			};
 			name = Release;
 		};
-		D750DAB31D75365E00576C8C /* Debug */ = {
+		D73842951D8272D20042239E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -388,7 +376,7 @@
 			};
 			name = Debug;
 		};
-		D750DAB41D75365E00576C8C /* Release */ = {
+		D73842961D8272D20042239E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -405,34 +393,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D750DA8F1D75365E00576C8C /* Build configuration list for PBXProject "MaruBatuApp" */ = {
+		D73842711D8272D10042239E /* Build configuration list for PBXProject "MaruBatuApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D750DAAC1D75365E00576C8C /* Debug */,
-				D750DAAD1D75365E00576C8C /* Release */,
+				D738428E1D8272D20042239E /* Debug */,
+				D738428F1D8272D20042239E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D750DAAE1D75365E00576C8C /* Build configuration list for PBXNativeTarget "MessagesExtension" */ = {
+		D73842901D8272D20042239E /* Build configuration list for PBXNativeTarget "MessagesExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D750DAAF1D75365E00576C8C /* Debug */,
-				D750DAB01D75365E00576C8C /* Release */,
+				D73842911D8272D20042239E /* Debug */,
+				D73842921D8272D20042239E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		D750DAB21D75365E00576C8C /* Build configuration list for PBXNativeTarget "MaruBatuApp" */ = {
+		D73842941D8272D20042239E /* Build configuration list for PBXNativeTarget "MaruBatuApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D750DAB31D75365E00576C8C /* Debug */,
-				D750DAB41D75365E00576C8C /* Release */,
+				D73842951D8272D20042239E /* Debug */,
+				D73842961D8272D20042239E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D750DA8C1D75365E00576C8C /* Project object */;
+	rootObject = D738426E1D8272D10042239E /* Project object */;
 }

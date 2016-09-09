@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -18,163 +18,177 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="528"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kWf-0T-9tm">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wil-GS-ddi">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="vTm-6e-3oV">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="cHK-ar-A0x">
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="300" id="5iP-PR-IOm"/>
-                                            <constraint firstAttribute="width" constant="300" id="oBw-62-hqL"/>
+                                            <constraint firstAttribute="height" constant="286" id="BSv-cJ-ksC"/>
                                         </constraints>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="3te-zW-7fY">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="KQe-0Q-YTb">
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G8B-zL-2Dx">
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zlO-ki-RaY">
                                                 <subviews>
-                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRe-Dq-kkU">
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="100" id="Ucq-V4-1dZ"/>
-                                                            <constraint firstAttribute="width" constant="100" id="tmx-ca-hd4"/>
-                                                        </constraints>
-                                                        <connections>
-                                                            <action selector="tapPlayButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="yIv-pD-oxM"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjJ-qc-6x6">
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="100" id="fd8-lk-e1t"/>
-                                                            <constraint firstAttribute="width" constant="100" id="oJz-sP-4Ef"/>
-                                                        </constraints>
-                                                        <connections>
-                                                            <action selector="tapPlayButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="mHh-WB-kCa"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9fU-Uy-6kv">
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="100" id="6f3-9c-6zG"/>
-                                                            <constraint firstAttribute="height" constant="100" id="yzp-JU-ZII"/>
-                                                        </constraints>
-                                                        <connections>
-                                                            <action selector="tapPlayButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="dXK-f0-Vj8"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IiW-Dx-pzq">
-                                                <subviews>
-                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMs-Ar-kSf">
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="100" id="tct-64-KPY"/>
-                                                            <constraint firstAttribute="width" constant="100" id="ydO-YU-MyF"/>
-                                                        </constraints>
-                                                        <connections>
-                                                            <action selector="tapPlayButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="Thf-wf-iTf"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Yf-pi-g5S">
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="100" id="FbC-tA-c0s"/>
-                                                            <constraint firstAttribute="height" constant="100" id="Y6u-p0-lOZ"/>
-                                                        </constraints>
-                                                        <connections>
-                                                            <action selector="tapPlayButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="BSF-xb-96f"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R90-ho-of9">
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="100" id="UxF-7d-1ly"/>
-                                                            <constraint firstAttribute="width" constant="100" id="p4i-F2-XO5"/>
-                                                        </constraints>
-                                                        <connections>
-                                                            <action selector="tapPlayButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="fHS-Uw-6Hz"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xgl-DK-k3L">
-                                                <subviews>
-                                                    <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TH0-st-yvU">
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="100" id="6Vx-XI-EFR"/>
-                                                            <constraint firstAttribute="height" constant="100" id="Frf-2w-VtI"/>
-                                                        </constraints>
-                                                        <connections>
-                                                            <action selector="tapPlayButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="zYT-sz-30K"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fhj-iw-e79">
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="100" id="6gv-bZ-lG2"/>
-                                                            <constraint firstAttribute="width" constant="100" id="pTY-fw-T9m"/>
-                                                        </constraints>
-                                                        <connections>
-                                                            <action selector="tapPlayButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="fOU-iw-wMf"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7M-tg-GHF">
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="100" id="Bax-vA-T2e"/>
-                                                            <constraint firstAttribute="width" constant="100" id="Gxe-g3-NXk"/>
-                                                        </constraints>
-                                                        <connections>
-                                                            <action selector="tapPlayButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="Sbx-VC-KBA"/>
-                                                        </connections>
-                                                    </button>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="TTL-nW-F0L">
+                                                        <subviews>
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="621-3g-HGP">
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="100" id="0g1-Oq-dsK"/>
+                                                                    <constraint firstAttribute="width" constant="100" id="Wtq-sF-0zp"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <connections>
+                                                                    <action selector="tapPlayButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="DpD-sy-a1Y"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwL-1l-d1a">
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="100" id="hEY-v5-Uwp"/>
+                                                                    <constraint firstAttribute="height" constant="100" id="j4J-nL-zkb"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <connections>
+                                                                    <action selector="tapPlayButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="pV2-eO-OJU"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71m-BV-XuO">
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="100" id="AOs-Fs-kgr"/>
+                                                                    <constraint firstAttribute="height" constant="100" id="XpY-56-QCY"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <connections>
+                                                                    <action selector="tapPlayButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="015-HK-N2x"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="WIs-Yj-bom">
+                                                        <subviews>
+                                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3c-yY-aXd">
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="100" id="EAd-F7-irI"/>
+                                                                    <constraint firstAttribute="height" constant="100" id="rbs-he-lti"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <connections>
+                                                                    <action selector="tapPlayButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="w2j-lQ-MSi"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lay-Xr-zvX">
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="100" id="VyT-1F-XYQ"/>
+                                                                    <constraint firstAttribute="width" constant="100" id="Yq4-d0-5wf"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <connections>
+                                                                    <action selector="tapPlayButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="Wlj-5b-qJP"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFX-zd-Gbc">
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="100" id="0Z0-Po-3ul"/>
+                                                                    <constraint firstAttribute="width" constant="100" id="zFD-2O-2DR"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <connections>
+                                                                    <action selector="tapPlayButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="WR8-I5-FiK"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Lxc-Ba-CH6">
+                                                        <subviews>
+                                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0P1-mx-3bC">
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="100" id="Qe9-qH-GlV"/>
+                                                                    <constraint firstAttribute="width" constant="100" id="dy0-Vc-5iE"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <connections>
+                                                                    <action selector="tapPlayButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="Iie-Fl-T9N"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eud-eo-yzV">
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="100" id="WuQ-s1-sjb"/>
+                                                                    <constraint firstAttribute="height" constant="100" id="z8O-GE-CKS"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <connections>
+                                                                    <action selector="tapPlayButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="cB5-s2-1t6"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KfB-ug-FzZ">
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="100" id="9JZ-EQ-S6s"/>
+                                                                    <constraint firstAttribute="height" constant="100" id="gsM-vg-Ear"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <connections>
+                                                                    <action selector="tapPlayButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="kKl-tq-TnZ"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="3te-zW-7fY" firstAttribute="centerX" secondItem="kWf-0T-9tm" secondAttribute="centerX" id="1pL-a7-ydp"/>
-                                    <constraint firstItem="vTm-6e-3oV" firstAttribute="centerX" secondItem="kWf-0T-9tm" secondAttribute="centerX" id="HVZ-og-qd9"/>
-                                    <constraint firstItem="vTm-6e-3oV" firstAttribute="centerY" secondItem="kWf-0T-9tm" secondAttribute="centerY" id="r05-7h-qs3"/>
-                                    <constraint firstItem="3te-zW-7fY" firstAttribute="centerY" secondItem="kWf-0T-9tm" secondAttribute="centerY" id="xIX-CM-ww3"/>
+                                    <constraint firstAttribute="trailing" secondItem="cHK-ar-A0x" secondAttribute="trailing" id="9fi-3R-gXA"/>
+                                    <constraint firstItem="cHK-ar-A0x" firstAttribute="centerY" secondItem="wil-GS-ddi" secondAttribute="centerY" id="Aww-j9-cSk"/>
+                                    <constraint firstItem="cHK-ar-A0x" firstAttribute="leading" secondItem="wil-GS-ddi" secondAttribute="leading" id="HGe-Dd-QjF"/>
+                                    <constraint firstItem="KQe-0Q-YTb" firstAttribute="centerY" secondItem="wil-GS-ddi" secondAttribute="centerY" id="PXu-se-052"/>
+                                    <constraint firstItem="KQe-0Q-YTb" firstAttribute="centerX" secondItem="wil-GS-ddi" secondAttribute="centerX" id="ZOa-Xi-ajb"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jXj-vZ-5hQ">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dgw-lw-8BI">
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zbS-Qe-bTS">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j63-us-PET">
                                         <state key="normal" title="Game Start">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="tapStartButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="Gvc-M2-7Gx"/>
+                                            <action selector="tapStartButton:" destination="ObA-dk-sSI" eventType="touchUpInside" id="gET-qj-Xzw"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="zbS-Qe-bTS" firstAttribute="centerY" secondItem="jXj-vZ-5hQ" secondAttribute="centerY" id="Gne-Dl-uV2"/>
-                                    <constraint firstItem="zbS-Qe-bTS" firstAttribute="centerX" secondItem="jXj-vZ-5hQ" secondAttribute="centerX" id="q2q-Pe-c6j"/>
-                                    <constraint firstAttribute="height" constant="200" id="rec-lt-pbD"/>
+                                    <constraint firstAttribute="height" constant="200" id="KE3-43-xPx"/>
+                                    <constraint firstItem="j63-us-PET" firstAttribute="centerX" secondItem="Dgw-lw-8BI" secondAttribute="centerX" id="kUQ-aO-ChE"/>
+                                    <constraint firstItem="j63-us-PET" firstAttribute="centerY" secondItem="Dgw-lw-8BI" secondAttribute="centerY" id="mOV-aM-CSw"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="jXj-vZ-5hQ" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="2G9-at-VEt"/>
-                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="kWf-0T-9tm" secondAttribute="bottom" id="3Gk-sX-g34"/>
-                            <constraint firstItem="kWf-0T-9tm" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="FtK-di-wQA"/>
-                            <constraint firstAttribute="trailing" secondItem="jXj-vZ-5hQ" secondAttribute="trailing" id="cEa-Yn-sWc"/>
-                            <constraint firstItem="kWf-0T-9tm" firstAttribute="top" secondItem="zMn-AG-sqS" secondAttribute="top" id="e2L-0k-Uf6"/>
-                            <constraint firstItem="jXj-vZ-5hQ" firstAttribute="top" secondItem="zMn-AG-sqS" secondAttribute="top" id="nab-Yd-k4I"/>
-                            <constraint firstAttribute="trailing" secondItem="kWf-0T-9tm" secondAttribute="trailing" id="tdS-zG-iS4"/>
+                            <constraint firstAttribute="trailing" secondItem="Dgw-lw-8BI" secondAttribute="trailing" id="1MF-ok-vRI"/>
+                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="wil-GS-ddi" secondAttribute="bottom" id="64e-sT-hUd"/>
+                            <constraint firstItem="wil-GS-ddi" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="8lF-hD-XjE"/>
+                            <constraint firstItem="wil-GS-ddi" firstAttribute="top" secondItem="zMn-AG-sqS" secondAttribute="top" id="HAk-ft-pEl"/>
+                            <constraint firstItem="Dgw-lw-8BI" firstAttribute="top" secondItem="zMn-AG-sqS" secondAttribute="top" id="NLc-Xr-77E"/>
+                            <constraint firstItem="Dgw-lw-8BI" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" id="fGO-Pp-1uK"/>
+                            <constraint firstAttribute="trailing" secondItem="wil-GS-ddi" secondAttribute="trailing" id="xux-aS-O4i"/>
                         </constraints>
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="528"/>
                     <connections>
-                        <outlet property="button1" destination="ZRe-Dq-kkU" id="zIW-xU-3fV"/>
-                        <outlet property="button2" destination="pjJ-qc-6x6" id="g9Z-Tt-G1j"/>
-                        <outlet property="button3" destination="9fU-Uy-6kv" id="u6D-SC-ufG"/>
-                        <outlet property="button4" destination="eMs-Ar-kSf" id="LDn-xu-fhx"/>
-                        <outlet property="button5" destination="2Yf-pi-g5S" id="rPp-e4-LT0"/>
-                        <outlet property="button6" destination="R90-ho-of9" id="lvL-dh-rsM"/>
-                        <outlet property="button7" destination="TH0-st-yvU" id="mrq-lX-gBN"/>
-                        <outlet property="button8" destination="Fhj-iw-e79" id="zCz-N0-Xn6"/>
-                        <outlet property="button9" destination="R7M-tg-GHF" id="Evc-4U-Zxa"/>
-                        <outlet property="comppactView" destination="jXj-vZ-5hQ" id="bQf-wI-exc"/>
-                        <outlet property="fullScreenView" destination="kWf-0T-9tm" id="tGj-fj-GnJ"/>
+                        <outlet property="button1" destination="621-3g-HGP" id="khd-XQ-kb4"/>
+                        <outlet property="button2" destination="UwL-1l-d1a" id="KHl-1T-LbH"/>
+                        <outlet property="button3" destination="71m-BV-XuO" id="3wE-tx-feb"/>
+                        <outlet property="button4" destination="s3c-yY-aXd" id="lDd-bF-MTF"/>
+                        <outlet property="button5" destination="lay-Xr-zvX" id="IQi-k6-vfM"/>
+                        <outlet property="button6" destination="fFX-zd-Gbc" id="baB-Mu-mBR"/>
+                        <outlet property="button7" destination="0P1-mx-3bC" id="8xm-CL-m93"/>
+                        <outlet property="button8" destination="eud-eo-yzV" id="4Ng-cr-fNh"/>
+                        <outlet property="button9" destination="KfB-ug-FzZ" id="pUW-Cf-zRI"/>
+                        <outlet property="compactView" destination="Dgw-lw-8BI" id="Eoo-kg-zbD"/>
+                        <outlet property="fullScreenView" destination="wil-GS-ddi" id="Fmd-Sd-Aco"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -183,6 +197,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="back.png" width="500" height="500"/>
+        <image name="back" width="500" height="500"/>
     </resources>
 </document>

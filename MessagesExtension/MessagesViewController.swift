@@ -2,7 +2,7 @@
 //  MessagesViewController.swift
 //  MessagesExtension
 //
-//  Created by hirauchi.shinichi on 2016/08/30.
+//  Created by hirauchi.shinichi on 2016/09/09.
 //  Copyright © 2016年 SAPPOROWORKS. All rights reserved.
 //
 
@@ -10,10 +10,6 @@ import UIKit
 import Messages
 
 class MessagesViewController: MSMessagesAppViewController {
-
-    @IBOutlet weak var comppactView: UIView!
-    @IBOutlet weak var fullScreenView: UIView!
-
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button3: UIButton!
@@ -24,18 +20,35 @@ class MessagesViewController: MSMessagesAppViewController {
     @IBOutlet weak var button8: UIButton!
     @IBOutlet weak var button9: UIButton!
 
+    @IBOutlet weak var compactView: UIView!
+    @IBOutlet weak var fullScreenView: UIView!
+
     var maruBatu = MaruBatu(data: nil)
     var buttons:[UIButton] = []
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         buttons = [button1 ,button2 ,button3 ,button4 ,button5 ,button6 ,button7 ,button8 ,button9]
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
     
+    // MARK: - Conversation Handling
+    
+    override func willBecomeActive(with conversation: MSConversation) {
+        if let message = conversation.selectedMessage {
+            if let url = message.url {
+                // 選択中のMSMessageが有効な場合、urlからデータを取得してMaruBatuを初期化する
+                maruBatu = MaruBatu(data: url.absoluteString)
+            }
+        }
+        refresh()
+        presentViewController(style: presentationStyle)
+    }
+
+    override func willTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
+        presentViewController(style: presentationStyle)
+    }
+
     // MARK: - Action
 
     @IBAction func tapStartButton(_ sender: AnyObject) {
@@ -67,7 +80,7 @@ class MessagesViewController: MSMessagesAppViewController {
     // MARK: - Private
 
     private func presentViewController(style: MSMessagesAppPresentationStyle) {
-        comppactView.isHidden = style == .expanded
+        compactView.isHidden = style == .expanded
         fullScreenView.isHidden = style == .compact
     }
 
@@ -79,22 +92,4 @@ class MessagesViewController: MSMessagesAppViewController {
             fullScreenView.backgroundColor = maruBatu.winnerColor()
         }
     }
-
-    // MARK: - Conversation Handling
-    
-    override func willBecomeActive(with conversation: MSConversation) {
-        if let message = conversation.selectedMessage {
-            if let url = message.url {
-                // 選択中のMSMessageが有効な場合、urlからデータを取得してMaruBatuを初期化する
-                maruBatu = MaruBatu(data: url.absoluteString)
-            }
-        }
-        refresh()
-        presentViewController(style: presentationStyle)
-    }
-
-    override func willTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
-        presentViewController(style: presentationStyle)
-    }
-
 }
